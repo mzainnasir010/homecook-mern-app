@@ -1,0 +1,88 @@
+body{
+    background-color: #EFFAFD;
+}
+.meal-detail-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .back-button {
+    background-color: #4A8BDF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .meal-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .meal-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .meal-info {
+    text-align: left;
+  }
+  
+  .meal-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #4A8BDF;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart-btn:hover, .back-button:hover {
+    background-color: white;
+    color:#4A8BDF;
+    border: 1px solid rgb(28, 138, 179);
+  }
+  
+  .alert-message {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    animation: slideDown 0.5s ease-out;
+    z-index: 9999;
+  }
+  .meal-serves {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #333;
+  }
+  
+  @keyframes slideDown {
+    from {
+      top: -50px;
+    }
+    to {
+      top: 0;
+    }
+  }
+  
